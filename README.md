@@ -47,3 +47,15 @@ polling, long polling, HTTP streaming 이 세가지는 결국에는 HTTP 프로�
 
 ### Express + Socket.io 로 채팅 구현해보기
 1. `npm install express socket.io && npm install nodemon -D`
+
+### Namespace vs Rooms
+`https://socket.io/docs/v4/emit-cheatsheet/`
+![image](https://github.com/foriinrangelen/WebSocket-App/assets/123726292/39be7f0b-6188-41ec-8cee-1e122b179dd9)
+
+#### 소스코드로 보기
+```javascript
+  // "myNamespace" 네임스페이스의 room1에 있는 모든 클라이언트에게
+  io.of("myNamespace").to("room1").emit(/* ... */);
+```
+![image](https://github.com/foriinrangelen/WebSocket-App/assets/123726292/71c2ef58-d0d7-4381-ae93-a028c685e70f)
+
