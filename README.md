@@ -45,3 +45,5 @@ polling, long polling, HTTP streaming 이 세가지는 결국에는 HTTP 프로�
 5. 서버측에서는 **연결된 모든 클라이언트** 또는 **클라이언트 하위집합**에 이벤트를 보낼 수있다
 6. 네임스페이스(멀티 플렉싱)
 
+### Express + Socket.io 로 채팅 구현해보기
+1. `npm install express socket.io && npm install nodemon -D`
