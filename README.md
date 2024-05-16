@@ -46,7 +46,8 @@ polling, long polling, HTTP streaming 이 세가지는 결국에는 HTTP 프로�
 6. 네임스페이스(멀티 플렉싱)
 
 ### Express + Socket.io 로 채팅 구현해보기
-1. `npm install express socket.io && npm install nodemon -D`
+1. `npm install express socket.io`
+2. `npm install nodemon -D`
 
 ### Namespace vs Rooms
 `https://socket.io/docs/v4/emit-cheatsheet/`
@@ -58,4 +59,8 @@ polling, long polling, HTTP streaming 이 세가지는 결국에는 HTTP 프로�
   io.of("myNamespace").to("room1").emit(/* ... */);
 ```
 ![image](https://github.com/foriinrangelen/WebSocket-App/assets/123726292/71c2ef58-d0d7-4381-ae93-a028c685e70f)
+
+### Private chat (DM) 구현해보기
+1. `npm install express socket.io mongoose`
+2. `npm install nodemon -D`
 
